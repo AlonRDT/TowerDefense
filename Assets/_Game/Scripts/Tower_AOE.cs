@@ -17,6 +17,7 @@ public class Tower_AOE : Tower
     {
         m_EffectDelay = 0.5f;
         m_Effect.Pause();
+        m_Effect.Clear();
     }
 
     protected override void updateWhenEnemyNear()
@@ -31,5 +32,6 @@ public class Tower_AOE : Tower
     protected override void noEnemiesNear()
     {
         m_Effect.Pause();
+        m_Effect.Clear();
     }
 }
